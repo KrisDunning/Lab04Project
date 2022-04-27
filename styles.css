@@ -13,7 +13,7 @@ h1{
     padding-bottom: 25px;
 }
 
-ul{
+.navbar ul{
     text-align: right;
     padding:25px;
 }
@@ -23,6 +23,7 @@ li{
 }
 .home_main_image{
     text-align: center;
+    margin-bottom: 100px;
 }
 .home_subimages{
     display:flex;

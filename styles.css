@@ -6,6 +6,9 @@ header{
     background-color:#58585B;
     height:100px;
     margin-bottom: 40px;
+    display:inline-flex;
+    width:100%;
+    z-index: 1;
 }
 
 h1{
@@ -14,13 +17,22 @@ h1{
     padding-bottom: 20px;
     width: fit-content;
 }
+#iconButton{
+    max-width: 80px;
+    margin-left:150px;
+    cursor:pointer;
+
+}
 #headerIcon{
-    float:left;
-    position:relative;
     height: 75px;
     width: 75px;
-    margin-left:140px;
-    margin-top: 10px;
+    float:right;
+
+}
+.navbar {
+    justify-content: right;
+    width:100%;
+    height:75px;
 }
 .navbar ul{
     text-align: right;

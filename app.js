@@ -3,6 +3,7 @@
 let popup = document.getElementById("popupC");
 let pppBTNS=document.getElementById("popupB");
 let h1text=document.getElementById("h1text");
+let icon= document.getElementById("headerIcon");
 
 window.onload = function runscript(){
 //window.addEventListener("load", () => {
@@ -64,3 +65,21 @@ console.log("runscript loaded");
         subIMG2.src="images/fourDogsOnChairs.jpg";
         subIMG3.src="images/fourDogsOnChairs.jpg";
     };
+
+
+function iconSpin() {
+
+ icon.style.transform = "rotateY(180deg)";
+ icon.style.transform = 'rotate(180deg)';
+    // if (deg=="180deg")
+    // {
+    //         deg="360deg";
+    // }
+    // else if (deg=="360deg")
+    // {
+    //          deg="180deg";
+    // }
+    
+
+ console.log("ICOn SPIN!");
+}

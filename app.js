@@ -36,7 +36,14 @@ console.log("runscript loaded");
         //let h1text=document.getElementById("h1text");
         console.log(h1text);
         h1text.innerHTML=" Pet Adoptions CAAAAATS!";
-
+        let mainImage=document.getElementById("home_main_image");
+        mainImage.src="images/christmasCat.jpg";
+        let subIMG1=document.getElementById("subimage1");
+        let subIMG2=document.getElementById("subimage2");
+        let subIMG3=document.getElementById("subimage3");
+        subIMG1.src="images/christmasCat.jpg";
+        subIMG2.src="images/christmasCat.jpg";
+        subIMG3.src="images/christmasCat.jpg";
                 
     };
     
@@ -48,4 +55,12 @@ console.log("runscript loaded");
         dogIcon.src="images/dogicon.png";
         console.log(h1text);
         h1text.innerHTML=" Pet Adoptions DOOOOOGS!";
+        let mainImage=document.getElementById("home_main_image");
+        mainImage.src="images/fourDogsOnChairs.jpg";
+        let subIMG1=document.getElementById("subimage1");
+        let subIMG2=document.getElementById("subimage2");
+        let subIMG3=document.getElementById("subimage3");
+        subIMG1.src="images/fourDogsOnChairs.jpg";
+        subIMG2.src="images/fourDogsOnChairs.jpg";
+        subIMG3.src="images/fourDogsOnChairs.jpg";
     };

@@ -69,21 +69,27 @@ li{
 .home_main{
     text-align: center;
 }
-.home_main_image{
+#home_main_image{
     margin-bottom: 100px;
 }
 .home_subimages{
     display:flex;
     justify-content: center;
+    /* max-width: 100%; */
 }
 .home_subimages section{
     text-align: center;
-    margin: 0px 15px 0px 15px;
+    /* margin: 0px 0px 0px 15px; */
+}
+.home_subimages img{
+    max-width:75%;
+    max-height:40%;
 }
 
 .home_subimages p{
     color:#2B5592;
     text-align:center;
+    margin: 5px;
 }
 
 footer {

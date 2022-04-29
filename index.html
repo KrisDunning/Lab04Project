@@ -7,9 +7,14 @@
 <body>
     <header>
         <h1 class="home_h1" id="h1text">Pet Adoptions</h1>
-        <button type="button" id="iconButton" onclick="iconSpin();">
+        <div id="iconWrapper">
+            <button type="button" id="iconButton" onclick="iconSpin();">
             <img src="" id="headerIcon">
-        </button>
+            </button>
+        </div>
+        <div id="rateMeWrapper">
+            <button type="button" id="rateMeButton" onClick="showRating()"> Rate My Website </button>
+        </div>
         <nav class="navbar">
             <ul>
                 <li>
@@ -19,11 +24,31 @@
                     <a href="https://dgiacona.github.io/Hello-World/">Partner's Page</a>
                 </li>
                 <li>
-                    <a href="https://krisdunning.github.io/Lab04Project/README.html">Attribution's</a>
+                    <a href="https://krisdunning.github.io/Lab04Project/README.md">Attribution's</a>
                 </li>
             </ul>
         </nav>
     </header>
+    <div id="ratePopup">
+        <form id="rateForm" name="rateForm">
+            <input id="oneStar" type="radio" name="Stars" value="1">
+            <label for="oneStar"><img src="images/staricon.png">1 Star</label>
+
+            <input id="twoStar" type="radio" name="Stars" value="2">
+            <label for="TwoStar"><img src="images/staricon.png">2 Stars</label>
+
+            <input id="threeStar" type="radio" name="Stars" value="3">
+            <label for="ThreeStar"><img src="images/staricon.png">3 Stars</label>
+
+            <input id="fourStar" type="radio" name="Stars" value="4">
+            <label for="FourStar"><img src="images/staricon.png">4 Stars</label>
+
+            <input id="fiveStar" type="radio" name="Stars" value="5" checked>
+            <label for="FiveStar"><img src="images/staricon.png">5 Stars</label>
+
+            <button type="button" name="starsSubmit" id="starsSubmit" onclick="rateMe()">Submit!</button>
+        </form>
+    </div>
     <div class="popupContainer" id="popupC">
         <div class="popupButtons" id="popupB">
           <button id="catsButton">Cats</button>
@@ -62,7 +87,7 @@
         </section>
     </main>
     <footer>
-        <p>&COPY; Pet Adoption's <span class="credits">Site maintained by Kris Dunning<span></span></p>
+        <p>&COPY; Pet Adoption's </p><span class="credits">Site maintained by Kris Dunning</span>
     </footer>
     <script src="app.js" defer></script>
 </body>

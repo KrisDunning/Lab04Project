@@ -1,49 +1,122 @@
-*{
+*
+{
     color:white;
 }
 
-header{
+header
+{
     background-color:#58585B;
     height:100px;
     margin-bottom: 40px;
-    display:inline-flex;
-    width:100%;
-    z-index: 1;
+    display:flex;
+    flex-wrap: nowrap;
 }
 
-h1{
-    float:left;
+h1
+{
+    flex-basis: 30%;
     padding-left: 20px;
-    padding-bottom: 20px;
-    width: fit-content;
+    padding-bottom: 10px; 
+    padding-top:10px;
 }
-#iconButton{
-    max-width: 80px;
-    margin-left:150px;
+
+#iconButton
+{
+    position: relative;
+    top:10px;
     cursor:pointer;
-
+    text-align: left;
+    background-color: rgba(88,88,91,.1);
+    border:none;    
 }
-#headerIcon{
+
+#headerIcon
+{
     height: 75px;
-    width: 75px;
-    float:right;
-
 }
-.navbar {
+
+#iconWrapper
+{
+    flex-basis: 20%;
+}
+
+#rateMeWrapper
+{
+    display: flex;
+    flex-basis: 10%;
+}
+
+#rateMeButton
+{
+    display:flex;
+    align-self:flex-end;
+    position: relative;
+    bottom:5px;
+    height:40px;
+    background-color: #58585B;
+}
+
+#ratePopup
+{   
+    display: none;
+    /* display: flex; */
+    float:inherit;
+    position:relative;
+    bottom:40px;
+    color:blue;
+}
+
+#rateForm
+{
+    display: flex;
+    float:initial;
+    position: inherit;
+    bottom:40px;
+    justify-content: space-around;
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 6px solid #6CC04A;
+    border-radius: 3px;
+    background-color: #2B5592;
+}
+
+radio{
+    text-align: center;
+}
+
+#rateForm label
+{
+    text-align: center;
+    color:#eeeeee;
+}
+
+#starsSubmit
+{
+    color:red;
+    background-color: #58585B;
+}
+
+.navbar { 
+    display: flex;
+    position: relative;
+    flex-basis: 40%;
     justify-content: right;
-    width:100%;
-    height:75px;
+    align-items:flex-end;
 }
 .navbar ul{
-    text-align: right;
-    padding:25px;
+    margin: 0px;
+    padding:0px;
 }
-li{
+
+li
+{
     display: inline-block;
     padding:10px;
 }
 
-.popupContainer{
+.popupContainer
+{
     display:none;
     position:fixed;
     z-index: 1;
@@ -54,7 +127,8 @@ li{
     background-color: rgb(0, 0, 0);
 }
 
-.popupButtons{
+.popupButtons
+{
     background-color: #eeeeee;
     margin:10% 25% auto 25%;
     padding: 20px;
@@ -64,56 +138,77 @@ li{
     text-align: center;
 }
 
-#catsButton{
+#catsButton
+{
     height:100%;
     width:45%;
     color:#2B5592;
     background-color: #eeeeee;
 }
 
-#dogsButton{
+#dogsButton
+{
     height:100%;
     width:45%;
     color:#2B5592; 
     background-color: #eeeeee; 
 }
 
-.home_main{
+.home_main
+{
     text-align: center;
 }
-#home_main_image{
+#home_main_image
+{
     margin-bottom: 100px;
 }
-.home_subimages{
+
+.home_subimages
+{
     display:flex;
     justify-content: center;
-    /* max-width: 100%; */
 }
-.home_subimages section{
+
+.home_subimages section
+{
     text-align: center;
-    /* margin: 0px 0px 0px 15px; */
 }
-.home_subimages img{
+
+.home_subimages img
+{
     max-width:75%;
     max-height:40%;
 }
 
-.home_subimages p{
+.home_subimages p
+{
     color:#2B5592;
     text-align:center;
     margin: 5px;
 }
 
-footer {
+footer
+{
     background-color: #6CC04A;
     height: 2rem;
-    /* padding: 5px; */
+    display: inline-flex;
+    width: 100%;
 }
-footer p{
+
+footer p
+{
+    flex-basis: 50%;
     vertical-align: middle;
     margin:.25em;
     padding:5px;
 }
-.credits{
-    margin-left: 70%;;
+
+.credits
+{
+    display: flex;
+    position: relative;
+    right:100px;
+    align-items: center;
+    justify-content: right;
+    flex-basis:50%;
 }
